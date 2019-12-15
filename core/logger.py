@@ -39,3 +39,6 @@ def get_logger():
 if __name__ == "__main__":
     log = get_logger()
     log.info('test')
+    log.info('test1')
+    log.info('test2')
+    log.info('test3')
