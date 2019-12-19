@@ -20,6 +20,8 @@ def read_file(username):
             data = f.read()
             account = json.loads(data)
             return account
+    else:
+        print('%s账号不存在' %username)
 
 
 

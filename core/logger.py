@@ -5,9 +5,9 @@ from conf.setting import current_date
 from conf.setting import BaseDir
 
 
-def get_logger():
+def get_logger(log_type):
     # 创建日志对象
-    log_obj = logging.getLogger('日志')
+    log_obj = logging.getLogger(log_type)
 
     # 设置日志水平
     log_obj.setLevel(logging.DEBUG)
@@ -21,7 +21,7 @@ def get_logger():
 
 
     # 创建格式对象
-    log_format = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
+    log_format = logging.Formatter('%(asctime)s>%(name)s>%(levelname)s>%(message)s')
 
     # 设置句柄格式
     sh.setFormatter(log_format)
